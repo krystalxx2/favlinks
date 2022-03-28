@@ -35,8 +35,13 @@ const TableBody = (props) => {
 
 const Table = (props) => {
   {
+    return (
+    <table>
+     <TableHeader/>
+     <TableBody linkData={props.linkData} removeLink={props.removeLink}/>
+    </table>
     /*TODO - return <table> component, TableHeader and TableBody  and pass props!*/
-  }
+    )
 }
-
+}
 export default Table
